@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="./front-end.js" defer></script>
+    <title>Landing Page</title>
+  </head>
+  <body class="font-Poppins tracking-wider">
+    <!-- header -->
+    <header>
+      <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+        <div>
+          <img src="./imgs/logo-bookmark.svg" alt="" srcset="" />
+        </div>
+
+        <ul
+          class="
+            hidden
+            sm:flex
+            flex-1
+            justify-end
+            items-center
+            gap-12
+            text-bookmark-blue
+            uppercase
+            text-xs
+            font-bold
+          "
+        >
+          <li class="cursor-pointer">Features</li>
+          <li class="cursor-pointer">Pricing</li>
+          <li class="cursor-pointer">Contact</li>
+          <button
+            type="button"
+            class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase"
+          >
+            Login
+          </button>
+        </ul>
+
+        <!-- mobile menu -->
+        <div
+          class="
+            hidden
+            sm:hidden
+            fixed
+            top-20
+            text-bookmark-blue
+            uppercase
+            text-xs
+            bg-bookmark-purple
+            left-0
+            right-0
+          "
+          id="mobile-navbar"
+        >
+          <ul
+            class="
+              flex flex-1 flex-col
+              p-6
+              mx-auto
+              text-white
+              gap-2
+              text-center
+              font-bold
+            "
+          >
+            <li class="cursor-pointer py-2">Features</li>
+            <li class="cursor-pointer py-2">Pricing</li>
+            <li class="cursor-pointer py-2">Contact</li>
+            <button
+              type="button"
+              class="
+                bg-bookmark-red
+                text-white
+                rounded-md
+                uppercase
+                mx-auto
+                py-1
+                px-10
+                font-bold
+                tracking-widest
+              "
+            >
+              Login
+            </button>
+          </ul>
+        </div>
+
+        <div
+          class="
+            flex
+            sm:hidden
+            flex-1
+            cursor-not-allowed
+            justify-end
+            mr-4
+            transition
+            duration-1000
+          "
+        >
+          <i
+            class="
+              fas
+              fa-angle-double-down
+              text-2xl text-bookmark-purple
+              border-2
+              px-2
+              py-1
+              border-bookmark-purple
+              rounded
+            "
+            id="mobile-menu-icon"
+          ></i>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
